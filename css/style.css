@@ -12,14 +12,14 @@ a {
   color: inherit;
 }
 
-ul,
-li {
+ul {
   list-style: none;
 }
 
 button {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 body {
@@ -49,11 +49,38 @@ body {
           align-items: center;
   min-height: 100px;
 }
-.header__nav {
-  cursor: pointer;
+.header__content {
+  background-image: url(../images/bg/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 100px);
 }
+
 .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.list__item + .list__item {
+  margin-left: 30px;
+}
+.list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.list__link:hover {
+  background-color: #c1a1d2;
 }
