@@ -56,6 +56,7 @@ body {
     min-height: 100px;
   }
   &__content {
+    position: relative;
     background-image: url(../images/bg/bg-header.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,6 +66,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -25px;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/icon/logo-m.svg);
+    }
   }
 }
 .list {
@@ -90,8 +101,100 @@ body {
 }
 .title {
   font-family: 'Corporate-A-Bold';
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2px;
 }
 .title-descr {
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
 }
 
+.section {
+  &__title {
+    font-family: 'Corporate-A-Bold';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $color-pink;
+    margin-bottom: 25px;
+  }
+}
+.concept {
+  &__inner {
+    max-width: 900px;
+    padding-top: 150px;
+    margin-bottom: 150px;
+    margin-left: auto;
+  }
+  &__title {
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
+.premier {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    max-width: 570px;
+    & + & {
+      margin-left: 20px;
+    }
+  }
+  &__text {
+    margin-bottom: 25px;
+  }
+  &__text--right {
+    margin-bottom: 0;
+  }
+  &__img {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  &__premier__img--right {
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    font-family: 'Corporate-A-Bold';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $color-pink;
+    border: 1px solid $color-pink;
+    padding: 14px 0;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $color-blue;
+      border: 1px solid $color-blue;
+    }
+  }
+}
+
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+  }
+  &__link {
+  }
+}
 // ---- ---- *** ---- ---- //
