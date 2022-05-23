@@ -315,12 +315,101 @@ body {
 // ---- ---- *** ---- ---- //
 @media (max-width: 1000px) {
 }
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
+// ---- ---- 740 ---- ---- //
+@media (max-width: 740px) {
+  .header {
+    &__logo {
+      margin-left: 30px;
+    }
+  }
+  .logo__img {
+    max-width: 180px;
+  }
+  .list {
+    &__item {
+      & + & {
+        margin-left: 15px;
+      }
+    }
+    &__link {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .title {
+    font-size: 58px;
+    line-height: 120%;
+  }
+  .title-descr {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+// ---- ---- 500 ---- ---- //
+@media (max-width: 500px) {
+  .header {
+    &__logo {
+      margin-left: 15px;
+    }
+  }
+  .logo__img {
+    max-width: 170px;
+  }
+  .list {
+    &__item {
+      & + & {
+        margin-left: 10px;
+      }
+    }
+    &__link {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .title {
+    font-size: 48px;
+    line-height: 120%;
+  }
+  .title-descr {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+// ---- ---- 420---- ---- //
+@media (max-width: 420px) {
+  .header {
+    &__top {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &__logo {
+      margin: 0 auto;
+    }
+  }
+  .logo__img {
+    max-width: 170px;
+  }
+  .list {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+    &__item {
+      & + & {
+        margin-left: 15px;
+      }
+    }
+    &__link {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .title {
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
 // ---- ---- 360 ---- ---- //
 @media (max-width: 360px) {
 }
