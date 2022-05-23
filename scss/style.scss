@@ -40,7 +40,6 @@ body {
   font-weight: 400;
   line-height: 19px;
   color: $color-white;
-  background-color: $color-black;
 }
 // ---- ---- main ---- ---- //
 .container {
@@ -48,7 +47,11 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+.gradient {
+  background: linear-gradient(180deg, #070a1b 0%, #2a3170 100%);
+}
 .header {
+  background-color: $color-black;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -247,6 +250,34 @@ body {
     max-width: 100%;
   }
 }
+.design-slider {
+  padding-bottom: 25px;
+  margin-bottom: 150px;
+  &__item {
+    margin: 0 30px;
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
+.slick-track {
+  margin-left: -38px;
+}
+.arrow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+
+  padding: 10px;
+}
+.arrow-prev {
+  transform: translateX(-90px);
+}
+.arrow-next {
+  transform: translateX(27px);
+}
 .text-bottom {
   margin-bottom: 150px;
   &__inner {
@@ -272,6 +303,7 @@ body {
 }
 
 .footer {
+  background-color: $color-black;
   &__inner {
     display: flex;
     justify-content: space-between;
