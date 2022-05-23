@@ -87,6 +87,9 @@ body {
   height: 50px;
   background-image: url(../images/icon/logo-m.svg);
 }
+.header__logo {
+  margin-left: 140px;
+}
 
 .list {
   display: -webkit-box;
@@ -132,6 +135,26 @@ body {
   margin-bottom: 50px;
 }
 
+.button {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+  font-family: "Corporate-A-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #f402a2;
+  border: 1px solid #f402a2;
+  padding: 14px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.button:hover {
+  color: #53a1cb;
+  border: 1px solid #53a1cb;
+}
+
 .section__title {
   font-family: "Corporate-A-Bold";
   font-size: 18px;
@@ -157,6 +180,9 @@ body {
   max-width: 100%;
 }
 
+.premier {
+  margin-bottom: 150px;
+}
 .premier__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,36 +198,74 @@ body {
   margin-left: 20px;
 }
 .premier__text {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 .premier__text--right {
   margin-bottom: 0;
 }
 .premier__img {
   max-width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 .premier__premier__img--right {
   margin-bottom: 20px;
 }
-.premier__link {
-  display: block;
-  text-align: center;
+
+.video {
+  margin-bottom: 150px;
+}
+.video__img {
   max-width: 100%;
-  font-family: "Corporate-A-Bold";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #f402a2;
-  border: 1px solid #f402a2;
-  padding: 14px 0;
+  margin-bottom: 25px;
+}
+.video__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 10px;
+}
+.video__btn span {
+  padding-top: 3px;
+}
+.video__btn path {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.premier__link:hover {
-  color: #53a1cb;
-  border: 1px solid #53a1cb;
+.video__btn:hover path {
+  fill: #53a1cb;
+}
+
+.text-bottom {
+  margin-bottom: 150px;
+}
+.text-bottom__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.text-bottom__column {
+  max-width: 255px;
+}
+.text-bottom__column + .text-bottom__column {
+  margin-left: 60px;
+}
+.text-bottom__text {
+  margin-bottom: 25px;
+}
+
+.img-bottom__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .footer__inner {

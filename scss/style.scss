@@ -77,7 +77,11 @@ body {
       background-image: url(../images/icon/logo-m.svg);
     }
   }
+  &__logo {
+    margin-left: 140px;
+  }
 }
+
 .list {
   display: flex;
 
@@ -113,7 +117,24 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
 }
-
+.button {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+  font-family: 'Corporate-A-Bold';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-pink;
+  border: 1px solid $color-pink;
+  padding: 14px;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $color-blue;
+    border: 1px solid $color-blue;
+  }
+}
 .section {
   &__title {
     font-family: 'Corporate-A-Bold';
@@ -132,8 +153,7 @@ body {
     margin-bottom: 150px;
     margin-left: auto;
   }
-  &__title {
-  }
+
   &__text {
     font-size: 24px;
     line-height: 29px;
@@ -144,6 +164,7 @@ body {
   }
 }
 .premier {
+  margin-bottom: 150px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -155,35 +176,65 @@ body {
     }
   }
   &__text {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
   &__text--right {
     margin-bottom: 0;
   }
   &__img {
     max-width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
   &__premier__img--right {
     margin-bottom: 20px;
   }
-  &__link {
-    display: block;
-    text-align: center;
+}
+.video {
+  margin-bottom: 150px;
+  &__img {
     max-width: 100%;
-    font-family: 'Corporate-A-Bold';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: $color-pink;
-    border: 1px solid $color-pink;
-    padding: 14px 0;
-    transition: all 0.4s ease;
-    &:hover {
-      color: $color-blue;
-      border: 1px solid $color-blue;
+    margin-bottom: 25px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    span {
+      padding-top: 3px;
     }
+    path {
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      path {
+        fill: $color-blue;
+      }
+    }
+  }
+}
+
+.text-bottom {
+  margin-bottom: 150px;
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+  &__column {
+    max-width: 255px;
+    & + & {
+      margin-left: 60px;
+    }
+  }
+  &__text {
+    margin-bottom: 25px;
+  }
+}
+.img-bottom {
+  &__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 
@@ -193,8 +244,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 300px;
-  }
-  &__link {
   }
 }
 // ---- ---- *** ---- ---- //
