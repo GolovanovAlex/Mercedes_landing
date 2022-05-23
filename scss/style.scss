@@ -84,7 +84,6 @@ body {
     margin-left: 140px;
   }
 }
-
 .list {
   display: flex;
 
@@ -251,7 +250,9 @@ body {
   }
 }
 .design-slider {
+  max-width: 1900px;
   padding-bottom: 25px;
+  margin: 0 auto;
   margin-bottom: 150px;
   &__item {
     margin: 0 30px;
@@ -297,11 +298,11 @@ body {
 .img-bottom {
   &__img {
     display: block;
-    margin: 0 auto;
     max-width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
   }
 }
-
 .footer {
   background-color: $color-black;
   &__inner {
@@ -312,3 +313,14 @@ body {
   }
 }
 // ---- ---- *** ---- ---- //
+@media (max-width: 1000px) {
+}
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
+// ---- ---- 360 ---- ---- //
+@media (max-width: 360px) {
+}

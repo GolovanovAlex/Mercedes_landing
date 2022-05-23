@@ -342,7 +342,9 @@ body {
 }
 
 .design-slider {
+  max-width: 1900px;
   padding-bottom: 25px;
+  margin: 0 auto;
   margin-bottom: 150px;
 }
 .design-slider__item {
@@ -398,8 +400,10 @@ body {
 
 .img-bottom__img {
   display: block;
-  margin: 0 auto;
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
 }
 
 .footer {
