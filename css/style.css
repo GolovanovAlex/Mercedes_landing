@@ -460,6 +460,10 @@ body {
   .text-bottom {
     margin-bottom: 100px;
   }
+
+  .footer__inner {
+    height: 150px;
+  }
 }
 @media (max-width: 655px) {
   .premier {
@@ -491,6 +495,18 @@ body {
   }
   .text-bottom__column + .text-bottom__column {
     margin-left: 30px;
+  }
+
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 200px;
+  }
+  .footer__link {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
@@ -586,6 +602,13 @@ body {
   .title {
     font-size: 40px;
     line-height: 120%;
+  }
+
+  .footer__logo {
+    margin: 50px auto 0;
+  }
+  .footer__link {
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 360px) {
