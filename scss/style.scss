@@ -349,11 +349,18 @@ body {
       margin-bottom: 100px;
     }
   }
+  .premier {
+    margin-bottom: 100px;
+  }
+  .text-bottom {
+    margin-bottom: 100px;
+  }
 }
 
 // ---- ---- 655 ---- ---- //
 @media (max-width: 655px) {
   .premier {
+    margin-bottom: 25px;
     &__inner {
       flex-direction: column;
     }
@@ -367,6 +374,15 @@ body {
     &__img {
       display: block;
       margin: 0 auto 26px;
+    }
+  }
+  .text-bottom {
+    margin-bottom: 75px;
+    &__column {
+      max-width: 250px;
+      & + & {
+        margin-left: 30px;
+      }
     }
   }
 }
@@ -410,8 +426,21 @@ body {
     }
   }
   .premier {
+    margin-bottom: 0;
     &__column {
       margin-bottom: 50px;
+    }
+  }
+  .text-bottom {
+    margin-bottom: 50px;
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__column {
+      max-width: 100%;
+      & + & {
+        margin-left: 0px;
+      }
     }
   }
 }
