@@ -84,6 +84,93 @@ body {
     margin-left: 140px;
   }
 }
+.menu {
+  &__list {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: $color-black;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    transition: all 0.5s ease-out;
+    transform: translateY(-150%);
+    &.active {
+      transform: translateY(0);
+      z-index: 18;
+    }
+  }
+  &__item {
+    padding: 12px 0;
+  }
+  &__link {
+    font-family: 'Corporate-A-Bold';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+    &:hover {
+      color: $color-pink;
+    }
+  }
+}
+.menu-burger {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 20;
+
+  span {
+    display: block;
+    position: relative;
+    top: -2px;
+    height: 1px;
+    background-color: $color-white;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.4s;
+    &::before,
+    &::after {
+      transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.5s;
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 30px;
+      height: 1px;
+      background-color: $color-white;
+    }
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      top: 8px;
+    }
+  }
+  &.active {
+    span {
+      transform: rotate(45deg);
+      top: 0;
+      &::before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+      &::after {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
+  &.active:hover span,
+  &.active:hover span::after,
+  &.active:hover span::before {
+    background-color: #f402a2;
+  }
+}
+
 .list {
   display: flex;
 
@@ -565,6 +652,9 @@ body {
     &__logo {
       margin: 0 auto;
     }
+  }
+  .menu__link {
+    display: block;
   }
   .logo__img {
     max-width: 170px;

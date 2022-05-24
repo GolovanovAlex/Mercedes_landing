@@ -4,13 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- favicon -->
+
+    <link
+      rel="shortcut icon"
+      href="images/favivicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
     <meta
       name="keywords"
       content="Mercedes, Avatar, Avtr, Car, Concept Car, Movie, Аватар, Мерседес, Машина "
     />
     <!-- Сделать кнопку бургер и меню -->
-    <!-- <meta name="description" content=""> -->
+    <meta
+      name="description"
+      content="Mercedes-Benz – VISION AVTR. Футуристическая концепция
+                представленного электромобиля объединяет человека, природу и
+                автомобиль уникальным образом."
+    />
 
     <title>Mercedes Avtr - движения будущего</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,13 +50,23 @@
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <button class="header__nav">
-            <img
-              src="images/icon/menu-btn.svg"
-              alt="Menu"
-              class="header__nav-img"
-            />
-          </button>
+          <nav class="menu">
+            <button class="menu-burger"><span></span></button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">CONCEPT</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">PREMIER</a>
+              </li>
+
+              <li class="menu__item">
+                <a class="menu__link" href="#">INTERIOR</a>
+              </li>
+            </ul>
+          </nav>
+
           <a href="#" class="logo header__logo">
             <img src="images/icon/logo.svg" alt="logo" class="logo__img" />
           </a>
