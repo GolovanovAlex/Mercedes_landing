@@ -64,7 +64,7 @@ body {
 }
 .header__content {
   position: relative;
-  background-image: url(../images/bg/bg-header.png);
+  background-image: url(../images/bg/bg-header.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
