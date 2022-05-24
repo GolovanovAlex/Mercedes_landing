@@ -94,8 +94,8 @@ body {
     width: 100%;
     text-align: center;
     background-color: $color-black;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
     transition: all 0.5s ease-out;
     transform: translateY(-150%);
     &.active {
@@ -104,7 +104,7 @@ body {
     }
   }
   &__item {
-    padding: 12px 0;
+    padding: 10px 0;
   }
   &__link {
     font-family: 'Corporate-A-Bold';
@@ -170,7 +170,6 @@ body {
     background-color: #f402a2;
   }
 }
-
 .list {
   display: flex;
 
@@ -239,7 +238,7 @@ body {
   &__inner {
     max-width: 900px;
     padding-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     margin-left: auto;
   }
 
@@ -253,6 +252,7 @@ body {
   }
 }
 .premier {
+  padding-top: 50px;
   margin-bottom: 150px;
   &__inner {
     display: flex;
@@ -483,7 +483,7 @@ body {
   }
   .concept {
     &__inner {
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
   }
   .premier {
@@ -520,7 +520,11 @@ body {
       margin: 0 auto 26px;
     }
   }
+  .video {
+    margin-bottom: 0px;
+  }
   .design {
+    padding-top: 50px;
     &__interior {
       margin-bottom: 50px;
     }
@@ -589,7 +593,7 @@ body {
   .concept {
     &__inner {
       padding-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 00px;
     }
     &__text {
       font-size: 18px;
@@ -677,9 +681,7 @@ body {
     font-size: 40px;
     line-height: 120%;
   }
-  .video {
-    margin-bottom: 50px;
-  }
+
   .footer {
     &__logo {
       margin: 50px auto 0;

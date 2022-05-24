@@ -107,8 +107,8 @@ body {
   width: 100%;
   text-align: center;
   background-color: #070a1b;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   -webkit-transform: translateY(-150%);
@@ -120,7 +120,7 @@ body {
   z-index: 18;
 }
 .menu__item {
-  padding: 12px 0;
+  padding: 10px 0;
 }
 .menu__link {
   font-family: "Corporate-A-Bold";
@@ -264,7 +264,7 @@ body {
 .concept__inner {
   max-width: 900px;
   padding-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   margin-left: auto;
 }
 .concept__text {
@@ -277,6 +277,7 @@ body {
 }
 
 .premier {
+  padding-top: 50px;
   margin-bottom: 150px;
 }
 .premier__inner {
@@ -637,7 +638,7 @@ body {
   }
 
   .concept__inner {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .premier {
@@ -678,6 +679,13 @@ body {
     margin: 0 auto 26px;
   }
 
+  .video {
+    margin-bottom: 0px;
+  }
+
+  .design {
+    padding-top: 50px;
+  }
   .design__interior {
     margin-bottom: 50px;
   }
@@ -748,7 +756,7 @@ body {
 
   .concept__inner {
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   .concept__text {
     font-size: 18px;
@@ -841,10 +849,6 @@ body {
   .title {
     font-size: 40px;
     line-height: 120%;
-  }
-
-  .video {
-    margin-bottom: 50px;
   }
 
   .footer__logo {
