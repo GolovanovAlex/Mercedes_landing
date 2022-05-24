@@ -264,6 +264,26 @@ body {
 .slick-track {
   margin-left: -38px;
 }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  li + li {
+    margin-left: 20px;
+  }
+  button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $color-purple;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+}
+.slick-active button {
+  width: 15px;
+  height: 15px;
+  background-color: $color-pink;
+}
 .arrow {
   position: absolute;
   bottom: -10px;
@@ -338,6 +358,12 @@ body {
       width: 100%;
     }
   }
+  .design-slider {
+    margin-bottom: 100px;
+  }
+  .slick-track {
+    margin-left: 0;
+  }
 }
 // ---- ---- 740 ---- ---- //
 @media (max-width: 740px) {
@@ -388,7 +414,6 @@ body {
     }
   }
 }
-
 // ---- ---- 655 ---- ---- //
 @media (max-width: 655px) {
   .premier {
@@ -409,8 +434,20 @@ body {
     }
   }
   .design {
+    &__interior {
+      margin-bottom: 50px;
+    }
     &__cell-four {
       align-items: flex-start;
+    }
+  }
+  .design-slider {
+    margin-bottom: 75px;
+    &__img {
+      margin: 0 auto;
+    }
+    &__item {
+      margin: 0 5px;
     }
   }
   .text-bottom {
@@ -477,6 +514,23 @@ body {
     &__column {
       margin-bottom: 50px;
     }
+  }
+  .design-slider {
+    margin-bottom: 50px;
+  }
+  .slick-dots {
+    li + li {
+      margin-left: 15px;
+    }
+    button {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .slick-active button {
+    width: 12px;
+    height: 12px;
+    background-color: $color-pink;
   }
   .text-bottom {
     margin-bottom: 50px;
