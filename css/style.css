@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Corporate-A-Bold";
   font-style: normal;
@@ -249,6 +250,64 @@ body {
 .button:hover {
   color: #53a1cb;
   border: 1px solid #53a1cb;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 25;
+  width: 40px;
+  height: 40px;
+  color: #c1a1d2;
+  -webkit-box-shadow: inset 0 0 0 3px #c1a1d2;
+          box-shadow: inset 0 0 0 3px #c1a1d2;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  cursor: pointer;
+}
+.scroll-up::before {
+  content: "↑";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+}
+.scroll-up:hover {
+  color: #f402a2;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.scroll-up--active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.scroll-up__svg-path {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  fill: none;
+  stroke: #f402a2;
+  stroke-width: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section__title {
@@ -752,6 +811,11 @@ body {
   .title-descr {
     font-size: 18px;
     line-height: 120%;
+  }
+
+  .scroll-up {
+    right: 10px;
+    bottom: 20px;
   }
 
   .concept__inner {
