@@ -1,5 +1,4 @@
-# Mercedes_landing
-# HelloTime
+# Mercedes landing
 
 ### Use Skills
 
@@ -9,9 +8,9 @@
 
 ---
 
-[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/HelloTime)
+[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/mercedes_landing)
 
-![hellotime](readme/hellotime.gif)
+![mercedes01](readme/mercedes01.gif)
 
 ## Info
 
