@@ -8,7 +8,7 @@
 
 ---
 
-[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/mercedes_landing)
+[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Mercedes_landing/)
 
 ![mercedes01](readme/mercedes01.gif)
 
