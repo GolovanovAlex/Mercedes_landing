@@ -14,10 +14,8 @@
 
 ## Info
 
-Создано на основе [Result School](https://vladilen.ru/courses).  
+Создано на основе YouTube канала [От 0 до 1](https://www.youtube.com/c/%D0%9E%D1%820%D0%B4%D0%BE1/videos)  
 Для обучения и отработки работы c CSS и JavaScript.  
-Изменение и смена фона при нажатии на кнопку.
-Отображение актуального времени.
 
 ---
 
