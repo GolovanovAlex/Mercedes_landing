@@ -27,6 +27,4 @@
 <a href="mailto:leconseiller@yandex.ru" style="font-size: 20px; color: black;">
 
 - <a href="mailto:golovanov.a.a@yandex.ru" >Golovanov.a.a@yandex.ru</a>
-
-
-  
+ 
